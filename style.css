@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    content: '';
+}
+
+.pg_header{
+    height: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+}
+
+.pg_header_phone, .pg_header_email, .pg_header_user{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.pg_header_email, .pg_header_user{
+    line-height: 30px;
+}
+
+.container > div:nth-child(1){
+    margin-right: 0px;
+}
+
+.pg_header_phone > span{
+    font-size: 18px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------- */
+.header_top{
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    width: 100%;
+    overflow: unset;
+    box-shadow: 0 0 0 #fff 0;
+}
+
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.logo{
+        margin: 0px; 
+        padding: 0px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+}
+.logo > a{
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo> a:hover{
+    color: rgb(247, 9, 9);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sub_menu{
+    float: left;
+    margin-left: 40px;
+}
+
+.menu-left{
+    list-style: none;
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu-left > li{
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    float: left;
+    width: auto;
+}
+
+.menu-left > li > a{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu-left > li > a:hover{
+    color: rgb(247, 9, 9);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mein_menu{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+.menu-right{
+    list-style: none;
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.menu-right > li{
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    float: left;
+    width: auto;
+}
+.menu-right >li >a{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-right >a{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu-right > li > a:hover{
+    color: rgb(247, 9, 9);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-right > a:hover{
+    color: rgb(247, 9, 9);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    list-style: block;
+    display: block;
+    list-style-type: none;
+}
+
+.dropdown-menu >li{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu >li:hover{
+    color: rgb(247, 9, 9);
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+
+}
+
+.menu-right > a:hover ~ .dropdown-menu{
+    display: block;
+}
+
+.menu-right > li > .dropdown-menu {
+    display: none;
+}
+
+.menu-right > li:hover > .dropdown-menu {
+    display: block;
+}
+
+.menu-right > li:hover > .dropdown-menu > li {
+    display: block;
+    animation-name: navAination;
+}
+
+
+
+@keyframes navAination {
+    0%   {margin-left: 100px}
+    100% {margin-left: 0px;}
+}
+
+
